@@ -11,6 +11,19 @@ class Command(BaseCommand):
         parser.add_argument('channel', type=str)
         parser.add_argument('filename', type=str)
 
+    def check_category_slug_avaliability(self, slug):
+        """
+        Check if the slug text already exists in the database.
+        If exists will append "-1", "-2", "-3", until it not exists,
+        and return.
+        """
+        slug_text = slug
+        counter = 1
+        while Category.objects.filter(slug=slug_text).exists():
+            slug_text = "{0}-{1}".format(slug, str(counter))
+            counter += 1
+        return slug_text
+
     def handle(self, *args, **options):
         channel_name = options['channel']
         file_name = options['filename']
@@ -22,6 +35,7 @@ class Command(BaseCommand):
 
         # Read the file and insert all new channel items
         count = 0
+        # import pdb; pdb.set_trace()
         with open(file_name, 'r') as file:
             for line in file.readlines():
                 line_items = line.split("/")
@@ -29,19 +43,22 @@ class Command(BaseCommand):
                 for item in line_items:  # Navigate in itens of line
                     category_name = item.strip()
                     if category_name:
-                        c = Category.objects.filter(
+                        cat = Category.objects.filter(
                             name=category_name,
-                            channel=channel).first()
-                        if not c:
-                            c = Category(
+                            channel=channel,
+                            parent=parent_obj).first()
+                        if not cat:
+                            category_slug = self.check_category_slug_avaliability(
+                                slugify(category_name))
+                            cat = Category(
                                 name=category_name,
-                                slug=slugify(category_name),
+                                slug=category_slug,
                                 parent=parent_obj,
                                 channel=channel,
                             )
-                            c.save()
+                            cat.save()
                             count += 1
-                        parent_obj = c
+                        parent_obj = cat
 
         self.stdout.write(
             self.style.SUCCESS(

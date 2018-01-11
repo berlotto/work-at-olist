@@ -17,4 +17,9 @@ class Category(models.Model):
         'self', on_delete=models.CASCADE, related_name='childs_set', null=True)
 
     def __str__(self):
-        return self.name
+        parent_path = ""
+        obj = self
+        while obj.parent is not None:
+            parent_path = obj.parent.name + "/" + parent_path
+            obj = obj.parent
+        return parent_path + self.name

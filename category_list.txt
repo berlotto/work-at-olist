@@ -1,0 +1,78 @@
+Books
+Books / National Literature
+Books / National Literature / Science Fiction
+Books / National Literature / Fiction Fantastic
+Books / Foreign Literature
+Books / Computers
+Books / Computers / Applications
+Books / Computers / Database
+Books / Computers / Programming
+Games
+Games / XBOX 360
+Games / XBOX 360 / Console
+Games / XBOX 360 / Games
+Games / XBOX 360 / Accessories
+Games / XBOX One
+Games / XBOX One / Console
+Games / XBOX One / Games
+Games / XBOX One / Accessories
+Games / Playstation 4
+Games / Playstation 4 / Console
+Games / Playstation 4 / Games
+Games / Playstation 4 / Accessories
+Games / Playstation 3
+Games / Playstation 3 / Console
+Games / Playstation 3 / Games
+Games / Playstation 3 / Accessories
+Games / Playstation 1
+Games / Playstation 1 / Console
+Games / Playstation 1 / Games
+Games / Playstation 1 / Accessories
+Computers
+Computers / Notebooks
+Computers / Notebooks / Memories
+Computers / Notebooks / Motherboards
+Computers / Notebooks / Hard Drives
+Computers / Notebooks / Solid State Drives
+Computers / Notebooks / Adesivos
+Computers / Notebooks / Keyboards
+Computers / Notebooks / Wifi Cameras
+Computers / Notebooks / Barcode Scanners
+Computers / Tablets
+Computers / Tablets / Capas protetoras
+Computers / Tablets / Películas
+Computers / Tablets / Fones de Ouvido
+Computers / Tablets / Bolsas
+Computers / Desktop
+Computers / Desktop / Keyboards
+Computers / Desktop / Mouses
+Computers / Desktop / Sound
+Computers / Desktop / Cases
+Computers / Desktop / Motherboards
+Computers / Desktop / Graphics
+Computers / Desktop / Softwares
+Computers / Desktop / Memories
+Computers / Desktop / Memories / DDR3
+Computers / Desktop / Memories / DDR4
+Computers / Desktop / Memories / DDR4 / 2330mhz
+Computers / Desktop / Memories / DDR4 / 1800mhz
+Computers / Desktop / Hard Drives
+Computers / Desktop / Hard Drives / 10GB to 100GB
+Computers / Desktop / Hard Drives / 100GB to 500GB
+Computers / Desktop / Hard Drives / 500GB or more
+Computers / Desktop / SSD
+Computers / Desktop / SSD / 10GB to 500GB
+Computers / Desktop / SSD / 500GB or more
+Toys
+Toys / Cars
+Toys / Cars / Remote Control
+Toys / Cars / Manual
+Toys / Doll
+Toys / Doll / Small size
+Toys / Doll / Medium size
+Toys / Doll / Big size
+Toys / Kits
+Toys / Eletronic
+Toys / Eletronic / Tablets
+Toys / Eletronic / Movel Games
+Toys / Eletronic / Others
