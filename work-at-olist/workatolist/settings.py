@@ -67,7 +67,8 @@ WSGI_APPLICATION = 'workatolist.wsgi.application'
 # django-dotenv put DATABASE_URL variable in the environ. See .env file
 DATABASES = {
     # This reads the DATABASE_URL and parse to django-configuration.
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(
+        os.environ.get("DATABASE_URL", None))
 }
 
 
@@ -111,4 +112,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'), )
