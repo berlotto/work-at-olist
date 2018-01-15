@@ -35,7 +35,6 @@ class Command(BaseCommand):
 
         # Read the file and insert all new channel items
         count = 0
-        # import pdb; pdb.set_trace()
         with open(file_name, 'r') as file:
             for line in file.readlines():
                 line_items = line.split("/")
